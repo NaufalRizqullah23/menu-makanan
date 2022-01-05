@@ -13,12 +13,18 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 public class Home extends AppCompatActivity{
+
+    Database database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
         ArrayList<Food> data = FoodData.getData(getApplicationContext());
+        database = new Database(getApplicationContext());
+//        ArrayList<Food> data = database.getFoods(getApplicationContext());
+        FoodData.tambahData(getApplicationContext());
         RecyclerView recyclerView = findViewById(R.id.item_list);
         FoodAdapter adapter = new FoodAdapter(data);
         recyclerView.setAdapter(adapter);

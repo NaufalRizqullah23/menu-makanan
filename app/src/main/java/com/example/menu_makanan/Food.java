@@ -11,11 +11,13 @@ public class Food {
     String descript;
     int price;
     Drawable gambar;
+    int img;
 
-    Food(String title,String descript,int price,Drawable gambar){
+    Food(String title,String descript,int price,Drawable gambar, int img){
         this.title = title;
         this.descript = descript;
         this.price = price;
         this.gambar = gambar;
+        this.img = img;
     }
 }
