@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "220456737243",
+    "project_id": "login-menu-makanan",
+    "storage_bucket": "login-menu-makanan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220456737243:android:4ec449c994e83700162ffe",
+        "android_client_info": {
+          "package_name": "com.example.menu_makanan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220456737243-60mq424pl9t7nsed6lte8t3qmi9gukjh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnnD_9jMx8xdPfVdFJuMJC-hXWa5otcx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220456737243-60mq424pl9t7nsed6lte8t3qmi9gukjh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
