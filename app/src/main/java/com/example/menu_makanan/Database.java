@@ -80,7 +80,7 @@ public class Database extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
 
-        // return contact list
+        // return food list
         return foodList;
     }
 }

@@ -10,6 +10,8 @@ import android.view.MenuInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 
 public class Home extends AppCompatActivity{
@@ -41,6 +43,7 @@ public class Home extends AppCompatActivity{
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()){
             case R.id.Logout_menu:
+                FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 this.finish();
