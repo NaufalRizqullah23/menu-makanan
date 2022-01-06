@@ -13,21 +13,6 @@
             android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".FoodAdapter"
-            android:exported="true" />
-        <activity
-            android:name=".Food"
-            android:exported="true" />
-        <activity
-            android:name=".MenuAdapter"
-            android:exported="true" />
-        <activity
-            android:name=".FoodData"
-            android:exported="true" />
-        <activity
-            android:name=".Menu"
-            android:exported="true" />
-        <activity
             android:name=".Detail"
             android:exported="true" />
         <activity

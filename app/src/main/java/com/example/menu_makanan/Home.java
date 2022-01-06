@@ -23,10 +23,14 @@ public class Home extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ArrayList<Food> data = FoodData.getData(getApplicationContext());
+        // kode pertama untuk input data ke sqlite database
+//        ArrayList<Food> data = FoodData.getData(getApplicationContext());
+
+        //kode untuk fetch data dari sqlite database yang sudah dibuat
         database = new Database(getApplicationContext());
-//        ArrayList<Food> data = database.getFoods(getApplicationContext());
+        ArrayList<Food> data = database.getFoods(getApplicationContext());
         FoodData.tambahData(getApplicationContext());
+
         RecyclerView recyclerView = findViewById(R.id.item_list);
         FoodAdapter adapter = new FoodAdapter(data);
         recyclerView.setAdapter(adapter);
