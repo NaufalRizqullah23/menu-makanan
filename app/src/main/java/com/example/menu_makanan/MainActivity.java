@@ -19,6 +19,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     @Override
@@ -27,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Database database = new Database(getApplicationContext());
+        ArrayList<Food> data = database.getFoods(getApplicationContext());
+        FoodData.tambahData(getApplicationContext());
 
         Button loginButton = findViewById(R.id.Button_login);
         loginButton.setOnClickListener(new View.OnClickListener() {

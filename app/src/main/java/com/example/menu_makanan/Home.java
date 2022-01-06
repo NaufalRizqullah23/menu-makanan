@@ -28,8 +28,9 @@ public class Home extends AppCompatActivity{
 
         //kode untuk fetch data dari sqlite database yang sudah dibuat
         database = new Database(getApplicationContext());
+//        FoodData.tambahData(getApplicationContext());
         ArrayList<Food> data = database.getFoods(getApplicationContext());
-        FoodData.tambahData(getApplicationContext());
+
 
         RecyclerView recyclerView = findViewById(R.id.item_list);
         FoodAdapter adapter = new FoodAdapter(data);
