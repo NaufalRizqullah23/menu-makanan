@@ -71,15 +71,6 @@ public class MainActivity extends AppCompatActivity {
         String User = Uname.getText().toString();
         String pw = Pass.getText().toString();
 
-
-//        if (User.equals("Admin") && pw.equals("Lapar123")){
-//            Intent intent = new Intent(getApplicationContext(),Home.class);
-//            startActivity(intent);
-//            this.finish();
-//        }else{
-//            Toast toast = Toast.makeText(getApplicationContext(),"Username atau Password salah!",Toast.LENGTH_SHORT);
-//            toast.show();
-//        }
             mAuth.signInWithEmailAndPassword(User, pw)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override

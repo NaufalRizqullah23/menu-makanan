@@ -69,15 +69,5 @@ public class Register extends AppCompatActivity {
                         }
                     }
                 });
-
-
-//        if (User.equals("Admin") && pw.equals("Lapar123")){
-//            Intent intent = new Intent(getApplicationContext(),Home.class);
-//            startActivity(intent);
-//            this.finish();
-//        }else{
-//            Toast toast = Toast.makeText(getApplicationContext(),"Username atau Password salah!",Toast.LENGTH_SHORT);
-//            toast.show();
-//        }
     }
 }

@@ -1,10 +1,6 @@
 package com.example.menu_makanan;
 
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import android.util.Log;
-
-import java.io.File;
 
 public class Food {
     String title;
